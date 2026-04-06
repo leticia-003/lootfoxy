@@ -2,7 +2,7 @@ export default function LoginPage() {
   return (
     <div className="w-screen h-screen bg-[#06011B] flex flex-col">
       {/* Header */}
-      <div className="bg-[#090320] border border-[#444444] flex items-center justify-between px-6 py-4 mx-auto w-11/12 max-w-6xl mt-6">
+      <div className="bg-[#090320] border border-[#444444] flex items-center justify-between px-6 py-4 mx-auto w-11/12 max-w-6xl mt-6 rounded-2xl">
         <img 
           src="/logo.png" 
           alt="Logo" 
@@ -12,7 +12,7 @@ export default function LoginPage() {
           <div 
             style={{ 
               background: "linear-gradient(to bottom, #FFA47D, #FF6827)",
-              borderRadius: "12px",
+              borderRadius: "7px",
               padding: "0.88px"
             }}
             className="hover:opacity-90 transition"
@@ -21,15 +21,15 @@ export default function LoginPage() {
               style={{ 
                 background: "linear-gradient(to bottom, #FF6827, #C33A00)"
               }}
-              className="px-6 py-2 text-white font-medium rounded-[11px] w-full h-full"
+              className="px-6 py-2 text-white font-medium rounded-[7px] w-full h-full"
             >
-              Login
+              LOGIN_
             </button>
           </div>
           <div 
             style={{ 
               background: "linear-gradient(to bottom, #57D5FF, #AEEBFF)",
-              borderRadius: "12px",
+              borderRadius: "7px",
               padding: "0.88px"
             }}
             className="hover:opacity-90 transition"
@@ -38,9 +38,9 @@ export default function LoginPage() {
               style={{ 
                 background: "linear-gradient(to bottom, #57D5FF, #00A7DF)"
               }}
-              className="px-6 py-2 text-white font-medium rounded-[11px] w-full h-full"
+              className="px-6 py-2 text-white font-medium rounded-[7px] w-full h-full"
             >
-              Sign up
+              SIGN UP_
             </button>
           </div>
         </div>
