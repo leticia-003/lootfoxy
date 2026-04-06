@@ -2,7 +2,13 @@ export default function LoginPage() {
   return (
     <div className="w-screen h-screen bg-[#06011B] flex flex-col">
       {/* Header */}
-      <div className="bg-[#090320] border border-[#444444] flex items-center justify-between px-6 py-4 mx-auto w-11/12 max-w-6xl mt-6 rounded-2xl">
+      <div 
+        style={{
+          background: "linear-gradient(to bottom, #090320, #050912)",
+          border: "0.8px solid #444444"
+        }}
+        className="flex items-center justify-between px-6 py-4 mx-auto w-11/12 max-w-6xl mt-6 rounded-2xl"
+      >
         <img 
           src="/logo.png" 
           alt="Logo" 
