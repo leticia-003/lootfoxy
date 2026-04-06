@@ -70,7 +70,10 @@ export default function LoginPage() {
               borderRadius: "0 12px 12px 0",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center"
+              justifyContent: "center",
+              backgroundImage: "url('/login-rightpart.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center"
             }}
           >
             <img 
