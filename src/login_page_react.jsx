@@ -9,12 +9,40 @@ export default function LoginPage() {
           className="h-12"
         />
         <div className="flex gap-4">
-          <button className="px-6 py-2 bg-orange-500 text-white rounded font-medium hover:bg-orange-600 transition">
-            Login
-          </button>
-          <button className="px-6 py-2 bg-blue-500 text-white rounded font-medium hover:bg-blue-600 transition">
-            Sign up
-          </button>
+          <div 
+            style={{ 
+              background: "linear-gradient(to bottom, #FFA47D, #FF6827)",
+              borderRadius: "12px",
+              padding: "0.88px"
+            }}
+            className="hover:opacity-90 transition"
+          >
+            <button 
+              style={{ 
+                background: "linear-gradient(to bottom, #FF6827, #C33A00)"
+              }}
+              className="px-6 py-2 text-white font-medium rounded-[11px] w-full h-full"
+            >
+              Login
+            </button>
+          </div>
+          <div 
+            style={{ 
+              background: "linear-gradient(to bottom, #57D5FF, #AEEBFF)",
+              borderRadius: "12px",
+              padding: "0.88px"
+            }}
+            className="hover:opacity-90 transition"
+          >
+            <button 
+              style={{ 
+                background: "linear-gradient(to bottom, #57D5FF, #00A7DF)"
+              }}
+              className="px-6 py-2 text-white font-medium rounded-[11px] w-full h-full"
+            >
+              Sign up
+            </button>
+          </div>
         </div>
       </div>
 
