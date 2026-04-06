@@ -47,12 +47,43 @@ export default function LoginPage() {
       </div>
 
       {/* Main content */}
-      <div className="flex-1 flex items-center justify-center">
-        <img 
-          src="/background-image.png" 
-          alt="Background" 
-          className="max-w-2xl max-h-2xl opacity-20 blur-md"
-        />
+      <div className="flex-1 flex items-center justify-center px-6">
+        <div 
+          style={{
+            background: "linear-gradient(to bottom, #230147, #110C16)",
+            borderRadius: "12px",
+            width: "900px",
+            height: "550px",
+            position: "relative",
+            display: "flex",
+            border: "1px solid #DB73FF"
+          }}
+        >
+          {/* Left half */}
+          <div style={{ flex: 1.5 }}></div>
+          
+          {/* Right half with overlay */}
+          <div 
+            style={{ 
+              flex: 1,
+              background: "rgba(219, 115, 255, 0.3)",
+              borderRadius: "0 12px 12px 0",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+          >
+            <img 
+              src="/login-background.png" 
+              alt="Login Background"
+              style={{
+                width: "120%",
+                height: "120%",
+                objectFit: "cover"
+              }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
