@@ -26,6 +26,16 @@ function App() {
       <section className="login-container" id="login">
         <div className="login-left">
           <h2 className="login-title">LOGIN</h2>
+          <div className="login-field">
+            <p className="login-email">EMAIL</p>
+            <input type="email" className="login-input" placeholder="Enter Email" />
+          </div>
+          <div className="login-field">
+            <p className="login-email">PASSWORD</p>
+            <input type="password" className="login-input" placeholder="Enter Password" />
+            <a href="#forgot" className="forgot-password">FORGOT PASSWORD?</a>
+            <button className="login-button">LOGIN</button>
+          </div>
         </div>
         <div className="login-right" />
       </section>
