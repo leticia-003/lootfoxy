@@ -22,6 +22,13 @@ function App() {
           </a>
         </nav>
       </header>
+
+      <section className="login-container" id="login">
+        <div className="login-left">
+          <h2 className="login-title">LOGIN</h2>
+        </div>
+        <div className="login-right" />
+      </section>
     </main>
   )
 }
