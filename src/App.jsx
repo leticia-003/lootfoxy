@@ -35,6 +35,9 @@ function App() {
             <input type="password" className="login-input" placeholder="Enter Password" />
             <a href="#forgot" className="forgot-password">FORGOT PASSWORD?</a>
             <button className="login-button">LOGIN</button>
+            <p className="continue-with">OR CONTINUE WITH</p>
+            <button className="google-button">SIGN IN WITH GOOGLE</button>
+            <p className="signup-text">Don't have an account? <a href="#signup">Create an account</a></p>
           </div>
         </div>
         <div className="login-right" />

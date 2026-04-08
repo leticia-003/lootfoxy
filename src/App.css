@@ -152,8 +152,8 @@
   position: relative;
   z-index: 1;
   margin: 3rem auto 0;
-  max-width: 50rem;
-  height: 30rem;
+  max-width: 55rem;
+  height: 33rem;
   display: flex;
   clip-path: polygon(1.1rem 0, calc(100% - 1.1rem) 0, 100% 1.1rem, 100% calc(100% - 1.1rem), calc(100% - 1.1rem) 100%, 1.1rem 100%, 0 calc(100% - 1.1rem), 0 1.1rem);
   background: linear-gradient(180deg, #230147 0%, #110C16 100%);
@@ -233,19 +233,53 @@
     0 0 0 3px rgba(219, 115, 255, 0.12);
 }
 
-.forgot-password {
+.forgot-password,
+.signup-text {
   color: white;
   font-family: 'Tomorrow', sans-serif;
   font-size: 0.75rem;
+  display: block;
+  width: 83%;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.forgot-password {
   text-decoration: none;
   margin-top: 0.3rem;
-  display: inline-block;
-  font-weight: 700;
-  transition: opacity 0.3s ease;
 }
 
 .forgot-password:hover {
   opacity: 0.8;
+}
+
+.signup-text {
+  margin-top: 0.8rem;
+}
+
+.signup-text a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.signup-text a:hover {
+  opacity: 0.8;
+}
+
+.continue-with {
+  color: white;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 0.75rem;
+  text-decoration: none;
+  margin: 1rem 0 0;
+  display: block;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+  width: 83%;
+  text-align: center;
 }
 
 .login-button {
@@ -267,6 +301,29 @@
 }
 
 .login-button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.google-button {
+  margin-top: 0.85rem;
+  padding: 0.8rem 1rem;
+  width: 83%;
+  background: linear-gradient(180deg, #DB73FF, #C130F4);
+  border: 1px solid #DB73FF;
+  border-radius: 0.3rem;
+  color: #f7fbff;
+  font-family: 'Tomorrow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 0 1px rgba(219, 115, 255, 0.3);
+}
+
+.google-button:hover {
   filter: brightness(1.1);
   transform: translateY(-2px);
 }
