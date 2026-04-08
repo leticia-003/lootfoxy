@@ -40,7 +40,9 @@ function App() {
             <p className="signup-text">Don't have an account? <a href="#signup">Create an account</a></p>
           </div>
         </div>
-        <div className="login-right" />
+        <div className="login-right">
+          <img src="/login-rightpart.png" alt="login decoration" className="login-right-image" />
+        </div>
       </section>
     </main>
   )
