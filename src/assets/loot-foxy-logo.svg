@@ -1,0 +1,57 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="earGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF7A1A" />
+      <stop offset="100%" stop-color="#7D1DFF" />
+    </linearGradient>
+    <linearGradient id="fur" x1="110" y1="28" x2="110" y2="172">
+      <stop offset="0%" stop-color="#FF7C22" />
+      <stop offset="58%" stop-color="#F15106" />
+      <stop offset="100%" stop-color="#7F1904" />
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#52E0FF" />
+      <stop offset="100%" stop-color="#2476FF" />
+    </linearGradient>
+    <linearGradient id="wordmark" x1="28" y1="166" x2="188" y2="208">
+      <stop offset="0%" stop-color="#FF6E26" />
+      <stop offset="55%" stop-color="#8E44FF" />
+      <stop offset="100%" stop-color="#2ED3FF" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#softGlow)">
+    <path d="M59 54L89 16L82 73L59 54Z" fill="url(#earGlow)" />
+    <path d="M161 54L131 16L138 73L161 54Z" fill="url(#earGlow)" />
+    <path d="M109 31C75 31 49 56 44 92C39 127 57 168 109 172C161 168 179 127 174 92C169 56 143 31 109 31Z" fill="url(#fur)" stroke="#22113F" stroke-width="5"/>
+    <path d="M79 100L97 84L95 116L79 100Z" fill="#0C1023" opacity="0.65"/>
+    <path d="M141 100L123 84L125 116L141 100Z" fill="#0C1023" opacity="0.65"/>
+    <path d="M109 93C92 93 77 108 77 126V128C77 131 79 133 82 133H136C139 133 141 131 141 128V126C141 108 126 93 109 93Z" fill="#18243D" opacity="0.75"/>
+    <circle cx="92" cy="96" r="13" fill="url(#metal)" stroke="#13203A" stroke-width="4"/>
+    <circle cx="128" cy="96" r="13" fill="url(#metal)" stroke="#13203A" stroke-width="4"/>
+    <circle cx="110" cy="84" r="15" fill="url(#metal)" stroke="#13203A" stroke-width="4"/>
+    <circle cx="92" cy="96" r="4.5" fill="#0A1122"/>
+    <circle cx="128" cy="96" r="4.5" fill="#0A1122"/>
+    <circle cx="110" cy="84" r="5" fill="#0A1122"/>
+    <path d="M74 68L95 46" stroke="#45DAFF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <path d="M146 68L125 46" stroke="#45DAFF" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <path d="M90 135C96 148 103 154 110 154C117 154 124 148 130 135" stroke="#2B1023" stroke-width="6" stroke-linecap="round"/>
+    <path d="M97 121L110 132L123 121" stroke="#FFE4C6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M94 139C100 144 104 146 110 146C116 146 120 144 126 139" stroke="#FFE4C6" stroke-width="5" stroke-linecap="round"/>
+    <path d="M60 120L34 128" stroke="#6F39FF" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+    <path d="M160 120L186 128" stroke="#6F39FF" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <g transform="translate(16 164) skewX(-18)">
+    <text x="0" y="34" fill="url(#wordmark)" font-family="Arial Black, sans-serif" font-size="42" font-style="italic" letter-spacing="1.5">
+      LootFoxy
+    </text>
+  </g>
+</svg>

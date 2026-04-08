@@ -1,1 +1,191 @@
-@import "tailwindcss";
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 2.25rem clamp(1.25rem, 3vw, 2.5rem) 3rem;
+}
+
+.ambient,
+.spark {
+  position: absolute;
+  pointer-events: none;
+}
+
+.ambient {
+  border-radius: 999px;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.ambient-left {
+  top: 16rem;
+  left: -6rem;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(22, 178, 255, 0.14);
+}
+
+.ambient-right {
+  right: 6rem;
+  top: 11rem;
+  width: 20rem;
+  height: 20rem;
+  background: rgba(210, 67, 255, 0.18);
+}
+
+.spark {
+  width: 1.7rem;
+  height: 1.7rem;
+  background: url('/stars.png') center center / contain no-repeat;
+  opacity: 0.9;
+}
+
+.spark-top {
+  top: 15rem;
+  left: 49%;
+}
+
+.spark-bottom {
+  bottom: 9rem;
+  left: 31%;
+}
+
+.topbar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 0 auto 5.5rem;
+  max-width: 84rem;
+  padding: 0.25rem 1.55rem;
+  clip-path: polygon(1.1rem 0, calc(100% - 1.1rem) 0, 100% 1.1rem, 100% calc(100% - 1.1rem), calc(100% - 1.1rem) 100%, 1.1rem 100%, 0 calc(100% - 1.1rem), 0 1.1rem);
+  background: linear-gradient(180deg, #090320, #050912);
+}
+
+.topbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #444444;
+  clip-path: polygon(1.1rem 0, calc(100% - 1.1rem) 0, 100% 1.1rem, 100% calc(100% - 1.1rem), calc(100% - 1.1rem) 100%, 1.1rem 100%, 0 calc(100% - 1.1rem), 0 1.1rem);
+}
+
+.topbar::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  background: linear-gradient(180deg, #090320, #050912);
+  clip-path: polygon(1.05rem 0, calc(100% - 1.05rem) 0, 100% 1.05rem, 100% calc(100% - 1.05rem), calc(100% - 1.05rem) 100%, 1.05rem 100%, 0 calc(100% - 1.05rem), 0 1.05rem);
+  box-shadow: inset 0 0 0 1px rgba(87, 56, 141, 0.22);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.brand-logo {
+  width: 4.1rem;
+  height: 4.1rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(102, 61, 255, 0.32));
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
+
+.brand-name,
+.nav-button {
+  font-family: 'Orbitron', 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.brand-name {
+  color: #eef2ff;
+  font-size: 1rem;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8.8rem;
+  padding: 0.95rem 1.35rem;
+  border-radius: 0.38rem;
+  text-decoration: none;
+  color: #f7fbff;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.nav-button-primary {
+  background: linear-gradient(180deg, #FF6827, #C33A00);
+}
+
+.nav-button-secondary {
+  background: linear-gradient(180deg, #57D5FF, #00A7DF);
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+}
+
+@media (max-width: 960px) {
+  .page-shell {
+    padding-top: 1.2rem;
+  }
+
+  .topbar {
+    margin-bottom: 0;
+  }
+
+  .spark-top {
+    left: auto;
+    right: 18%;
+    top: 12rem;
+  }
+
+  .spark-bottom {
+    left: 14%;
+    bottom: 4.8rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .nav-button {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
